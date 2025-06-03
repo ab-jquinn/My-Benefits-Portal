@@ -14,7 +14,7 @@
 # Ignore all plugins
 /plugins/*
 # Except this one plugin
-!/plugins/qorp-plugin
+!/plugins/redirection
 
 #---------------------------
 # MU plugins: these are
