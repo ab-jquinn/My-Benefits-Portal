@@ -4,7 +4,7 @@
 # Ignore all themes
 /themes/*
 # Except this one theme
-!/themes/qorp-theme
+!/themes/custom-theme
 
 #---------------------------
 # Plugins
@@ -14,7 +14,7 @@
 # Ignore all plugins
 /plugins/*
 # Except this one plugin
-!/plugins/redirection
+!/plugins/custom-plugin
 
 #---------------------------
 # MU plugins: these are
