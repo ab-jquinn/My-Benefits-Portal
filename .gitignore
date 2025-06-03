@@ -31,3 +31,10 @@
 # Upgrade files
 #---------------------------
 /upgrade/
+
+#---------------------------
+# Misc
+#---------------------------
+.DS_Store
+advances-cache.php
+index.php
