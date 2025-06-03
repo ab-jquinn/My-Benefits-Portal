@@ -5,13 +5,17 @@ on:
      - main
 jobs:
   build:
+    if: |
+        github.event.head_commit.message != 'Merge branch' &&
+        startsWith(github.event.head_commit.message, 'Merge pull request') &&
+        contains(github.event.head_commit.message, 'staging')
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: GitHub Action Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@v3
       with:
-      # Deploy vars
+        # Deploy vars
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
         WPE_ENV: mybenefitsport
         # Deploy Options
